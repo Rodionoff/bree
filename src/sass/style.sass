@@ -1,0 +1,276 @@
+// type your sass here
+
+%button-reset 
+  border: none
+  margin: 0
+  padding: 0
+  width: auto
+  overflow: visible
+
+  background: transparent
+
+  /* inherit font & color from ancestor */
+  color: inherit
+  font: inherit
+
+  /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
+  line-height: normal
+
+  /* Corrects font smoothing for webkit */
+  -webkit-font-smoothing: inherit
+  -moz-osx-font-smoothing: inherit
+
+  /* Corrects inability to style clickable `input` types in iOS */
+  -webkit-appearance: none
+
+*, *::before, *::after
+  box-sizing: border-box
+
+body
+  margin: 0
+  background-color: #c8cfdc
+
+header
+  margin: 0 auto
+  width: 1280px
+  background: url('../img/header-background.png') center no-repeat
+  background-size: cover
+  padding: 308px 0 263px 52px
+  box-sizing: border-box
+
+.header-title
+    
+  font-size: 25px
+  line-height: 24px
+  font-weight: 500
+  letter-spacing: 0.025em
+  color: #ffffff
+  margin-bottom: 28px
+
+.header-text
+  width: 378px
+  font-family: 'Roboto', sans-serif
+  font-size: 14px
+  line-height: 25px
+  font-weight: 300
+  letter-spacing: 0.02em
+  color: #ffffff
+
+.about
+  box-sizing: border-box
+  margin: 0 auto
+  width: 1280px
+  padding: 108px 25px 115px 52px
+  background-color: #f5f5f5
+  background-image: url('../img/sneakers.png')
+  background-repeat: no-repeat
+  background-size: contain
+  background-position: 215px 0
+  display: flex
+  justify-content: space-between
+
+.about-left
+  // display: flex
+  // flex-direction: column
+
+.story
+  align-self: flex-start
+  margin-bottom: 46px
+
+.story-title
+  font-size: 14px
+  line-height: 35px
+  font-weight: 500
+  text-transform: uppercase
+  letter-spacing: 0.05em
+  color: #666666
+  font-family: 'Ubuntu', sans-serif
+  margin-bottom: 9px
+
+.story-verbose-title
+  font-size: 25px
+  line-height: 24px
+  font-weight: 500
+  letter-spacing: 0.025em
+  color: #333333
+  margin-bottom: 28px
+
+.story-text
+  width: 372px
+  font-family: 'Roboto', sans-serif
+  font-size: 14px
+  line-height: 25px
+  font-weight: 300
+  letter-spacing: 0.02em
+  color: #666666
+
+.benefits
+  align-self: flex-end
+
+.benefits-title
+  font-size: 14px
+  // line-height: 24px
+  font-weight: 500
+  letter-spacing: 0.05em
+  color: #666666
+  
+  font-family: 'Ubuntu', sans-serif
+  margin-bottom: 18px
+  
+
+.benefit
+  margin-bottom: 12px
+
+.benefit-title
+  font-size: 18px
+  // line-height: 25px
+  font-weight: 500
+  letter-spacing: 0.05em
+  color: #333333
+  margin-bottom: 6px
+  font-family: 'Ubuntu', sans-serif
+
+.benefit-text
+  font-family: 'Roboto', sans-serif
+  font-size: 12px
+  line-height: 20px
+  font-weight: 300
+  letter-spacing: 0.02em
+  color: #666666
+
+.about-right
+  width: 300px
+  background-color: #ffffff
+  border: 4.0px solid #e4e4e4
+  padding: 25px 0 23px
+
+.sneaker-brand
+  font-size: 25px
+  line-height: 25px
+  font-weight: 500
+  font-family: 'Ubuntu', sans-serif
+  text-transform: uppercase
+  letter-spacing: 0.025em
+  color: #333333
+  margin-left: 30px
+  margin-bottom: 14px
+
+.sneaker-name
+  font-family: 'Roboto', sans-serif
+  font-size: 14px
+  line-height: 25px
+  font-weight: 300
+  letter-spacing: 0.025em
+  color: #666666
+  margin-left: 29px
+
+.sneaker-colors
+  font-family: 'Ubuntu', sans-serif
+  font-size: 14px
+  // width: 193px
+  line-height: 35px
+  font-weight: 500
+  text-transform: uppercase
+  letter-spacing: 0.05em
+  color: #0089cf
+  margin-bottom: 50px
+  margin-left: 29px
+  margin-right: 0
+
+.sneaker-image
+  width: 263px
+  margin: 0 auto 51px
+
+.sneaker-info
+  display: flex
+  justify-content: space-between
+  margin: 0 29px 18px
+
+.in-stock 
+  font-family: 'Ubuntu', sans-serif
+  font-size: 14px
+  line-height: 25px
+  font-weight: 500
+  text-transform: uppercase
+  letter-spacing: 0.05em
+  color: #333333
+
+.price 
+  // width: 51px
+// height: 16px
+  font-family: 'Ubuntu', sans-serif
+  font-size: 18px
+  line-height: 25px
+  font-weight: 500
+  text-transform: uppercase
+  letter-spacing: 0.05em
+  color: #333333
+
+.sneaker-info-size-wrapper
+  font-family: 'Ubuntu', sans-serif
+  font-size: 14px
+  line-height: 25px
+  font-weight: 500
+  text-transform: uppercase
+  letter-spacing: 0.05em
+  // color: #666666
+  // padding: 20px 20px
+  display: flex
+  justify-content: space-between
+  width: 250px
+  margin: 0 auto
+
+.sneaker-info-size
+  color: #666666
+  width: 115px
+  border: 1.0px solid #e4e4e4
+  display: flex
+  align-items: center
+  justify-content: space-between
+  padding: 20px 20px
+
+.sneaker-add-to-card
+  @extend %button-reset
+  width: 115px
+  padding: 15px 8px
+  color: #ffffff
+  width: 115px
+  background-color: #333333
+  font-size: 14px
+
+p, h3, h4
+  margin: 0
+  padding: 0
+  font-size: 16px
+
+
+.social
+  padding: 109px 49px 190px 51px
+  width: 1280px
+  background-color: #ffffff
+  margin: 0 auto
+
+.social-title
+  font-family: 'Ubuntu', sans-serif
+  font-size: 14px
+  line-height: 35px
+  font-weight: 500
+  text-transform: uppercase
+  letter-spacing: 0.05em
+  color: #666666
+  margin-bottom: 10px
+
+.social-hashtag
+  font-family: 'Ubuntu', sans-serif
+  font-size: 25px
+  line-height: 24px
+  font-weight: 500
+  letter-spacing: 0.025em
+  color: #333333
+  margin-bottom: 43px
+
+.photos
+  width: 1180px
+  display: flex
+  justify-content: space-between
+  
