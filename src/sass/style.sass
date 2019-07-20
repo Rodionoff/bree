@@ -1,5 +1,4 @@
-// type your sass here
-
+@import 'fonts'
 %button-reset 
   border: none
   margin: 0
@@ -26,6 +25,16 @@
 *, *::before, *::after
   box-sizing: border-box
 
+
+*:not([class$='title'])
+  font-family: Roboto
+
+*[class$='title'],
+.sneaker-brand,
+.sneaker-colors,
+.social-hashtag
+  font-family: DINNextLTProCond
+
 body
   margin: 0
   background-color: #c8cfdc
@@ -33,9 +42,10 @@ body
 header
   margin: 0 auto
   width: 1280px
-  background: url('../img/header-background.png') center no-repeat
+  background-position: center
+  background-repeat: no-repeat
   background-size: cover
-  padding: 308px 0 263px 52px
+  padding: 261px 0 263px 52px
   box-sizing: border-box
 
 .header-title
@@ -49,7 +59,6 @@ header
 
 .header-text
   width: 378px
-  font-family: 'Roboto', sans-serif
   font-size: 14px
   line-height: 25px
   font-weight: 300
@@ -62,16 +71,11 @@ header
   width: 1280px
   padding: 108px 25px 115px 52px
   background-color: #f5f5f5
-  background-image: url('../img/sneakers.png')
   background-repeat: no-repeat
   background-size: contain
   background-position: 215px 0
   display: flex
   justify-content: space-between
-
-.about-left
-  // display: flex
-  // flex-direction: column
 
 .story
   align-self: flex-start
@@ -84,7 +88,6 @@ header
   text-transform: uppercase
   letter-spacing: 0.05em
   color: #666666
-  font-family: 'Ubuntu', sans-serif
   margin-bottom: 9px
 
 .story-verbose-title
@@ -97,7 +100,6 @@ header
 
 .story-text
   width: 372px
-  font-family: 'Roboto', sans-serif
   font-size: 14px
   line-height: 25px
   font-weight: 300
@@ -109,29 +111,22 @@ header
 
 .benefits-title
   font-size: 14px
-  // line-height: 24px
   font-weight: 500
   letter-spacing: 0.05em
   color: #666666
-  
-  font-family: 'Ubuntu', sans-serif
   margin-bottom: 18px
   
-
 .benefit
   margin-bottom: 12px
 
 .benefit-title
   font-size: 18px
-  // line-height: 25px
   font-weight: 500
   letter-spacing: 0.05em
   color: #333333
-  margin-bottom: 6px
-  font-family: 'Ubuntu', sans-serif
+  margin-bottom: 3px
 
 .benefit-text
-  font-family: 'Roboto', sans-serif
   font-size: 12px
   line-height: 20px
   font-weight: 300
@@ -148,15 +143,13 @@ header
   font-size: 25px
   line-height: 25px
   font-weight: 500
-  font-family: 'Ubuntu', sans-serif
   text-transform: uppercase
   letter-spacing: 0.025em
   color: #333333
   margin-left: 30px
-  margin-bottom: 14px
+  margin-bottom: 3px
 
 .sneaker-name
-  font-family: 'Roboto', sans-serif
   font-size: 14px
   line-height: 25px
   font-weight: 300
@@ -165,9 +158,7 @@ header
   margin-left: 29px
 
 .sneaker-colors
-  font-family: 'Ubuntu', sans-serif
   font-size: 14px
-  // width: 193px
   line-height: 35px
   font-weight: 500
   text-transform: uppercase
@@ -187,18 +178,17 @@ header
   margin: 0 29px 18px
 
 .in-stock 
-  font-family: 'Ubuntu', sans-serif
+  font-family: 'DINNextLTProCond', sans-serif
   font-size: 14px
   line-height: 25px
   font-weight: 500
   text-transform: uppercase
   letter-spacing: 0.05em
   color: #333333
+  border-bottom: #0089cf 1px dashed
 
 .price 
-  // width: 51px
-// height: 16px
-  font-family: 'Ubuntu', sans-serif
+  font-family: 'DINNextLTProCond', sans-serif
   font-size: 18px
   line-height: 25px
   font-weight: 500
@@ -207,36 +197,35 @@ header
   color: #333333
 
 .sneaker-info-size-wrapper
-  font-family: 'Ubuntu', sans-serif
   font-size: 14px
   line-height: 25px
   font-weight: 500
   text-transform: uppercase
   letter-spacing: 0.05em
-  // color: #666666
-  // padding: 20px 20px
   display: flex
   justify-content: space-between
   width: 250px
   margin: 0 auto
 
 .sneaker-info-size
-  color: #666666
   width: 115px
-  border: 1.0px solid #e4e4e4
-  display: flex
-  align-items: center
-  justify-content: space-between
-  padding: 20px 20px
   cursor: pointer
-
+  color: #333
+  background-color: transparent
+  appearance: none
+  background-image: url('../assets/icons/arrow.svg')
+  background-repeat: no-repeat
+  background-position: right 10px top 50%
+  border: 1px solid #333
+  padding: 10px
+    
 .sneaker-add-to-card
   @extend %button-reset
   width: 115px
   padding: 15px 8px
   color: #ffffff
   width: 115px
-  background-color: #333333
+  background-color: #333
   font-size: 14px
   cursor: pointer
 
@@ -245,25 +234,21 @@ p, h3, h4
   padding: 0
   font-size: 16px
 
-
 .social
   padding: 109px 49px 190px 51px
   width: 1280px
   background-color: #ffffff
   margin: 0 auto
 
-.social-title
-  font-family: 'Ubuntu', sans-serif
+.social-title 
   font-size: 14px
   line-height: 35px
   font-weight: 500
   text-transform: uppercase
   letter-spacing: 0.05em
   color: #666666
-  margin-bottom: 10px
 
 .social-hashtag
-  font-family: 'Ubuntu', sans-serif
   font-size: 25px
   line-height: 24px
   font-weight: 500
@@ -275,4 +260,16 @@ p, h3, h4
   width: 1180px
   display: flex
   justify-content: space-between
+
+.photo
+  overflow: hidden
+  width: 280px
+  height: 280px
+  
+  img
+    transition: transform .4s
+
+    &:hover
+      transform: scale(1.04)
+
   
